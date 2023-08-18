@@ -1,3 +1,23 @@
+#' @title overview of data frame
+#'
+#' @description
+#' \code{view_df} display the range/elements of each column
+#'
+#' @keywords dataframe overview
+#'
+#' @param x a dataframe, preferably the wide format
+
+#' @return a data table with range/elements of each column
+#'
+#' @author Tien-Cheng Wang
+#'
+#' @importFrom purrr map_dfr
+#' @importFrom dplyr %>%
+#' @importFrom Rdpack reprompt
+#'
+#' @export
+#'
+#' @examples
 view_df <- function(x){
   # have the range/elements of each column
   x <- as.data.frame(x)
