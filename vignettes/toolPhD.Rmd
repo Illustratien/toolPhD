@@ -28,9 +28,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-
-
-
 Then the package can be loaded using the function
 ```{r}
 library(toolPhD)

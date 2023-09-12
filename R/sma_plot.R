@@ -19,11 +19,9 @@
 #' @importFrom purrr map_dfr
 #' @importFrom usethis use_pipe
 #' @importFrom Rdpack reprompt
-#'
-#' @references
-#' \insertRef{warton2012}{toolPhD}
-#'
 #' @export
+# @references
+#\insertRef{warton2012}{toolPhD}
 #'
 #' @examples
 #' sma_plot(mtcars,x_string="mpg",y_string = "cyl")
@@ -32,14 +30,13 @@ sma_plot <- function(data,x_string,y_string){
   # sma plot
   # note that this is not yet applicable to groups.
   SMA <-  smatr::sma(paste0(y_string,"~",x_string), method = "SMA", data = data)
-  SMA.slope <- SMA %>% coef %>% .[[2]]
-  SMA.intercept <- SMA %>% coef %>% .[[1]]
+  SMA.slope <- coef(SMA)[[2]]
+  SMA.intercept <- coef(SMA)[[1]]
   r2 <- paste("italic(y)==",format(SMA.slope, digits = 2),
               "%.%italic(x)","+", format(SMA.intercept, digits = 2),
               "~~~italic(r)^2==",format(SMA$r2, digits = 2),sep = "")
 
-  data %>%
-    ggplot() +
+  ggplot(data=data) +
     geom_point(aes(x=!!sym(x_string),y=!!sym(y_string)), size=3,show.legend=F)+
     geom_abline(aes(slope=SMA.slope,intercept=SMA.intercept),
                 size=1.25,show.legend=F)+

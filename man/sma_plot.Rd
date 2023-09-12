@@ -22,9 +22,6 @@ a ggplot with regression line and r2 text
 \examples{
 sma_plot(mtcars,x_string="mpg",y_string = "cyl")
 }
-\references{
-\insertRef{warton2012}{toolPhD}
-}
 \author{
 Tien-Cheng Wang
 }

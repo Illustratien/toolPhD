@@ -19,9 +19,6 @@ a list of three elements: 1. `r.mat`r matrix, 2.`p.mat` p-value matrix and 3 `s.
 #Define example dataset
 sma_cor(mtcars[,1:7])
 }
-\references{
-\insertRef{warton2012}{toolPhD}
-}
 \author{
 Tien-Cheng Wang
 }

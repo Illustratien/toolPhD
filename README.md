@@ -5,22 +5,21 @@
 ## ToolPhD: Accomplish your academic publication with ease and aesthetic.
 
 <!-- Version : [0.1.0](https://illustratien.github.io/toolPhD/articles/toolPhD.html#version-history); -->
-
-###### *Wang, T-C.*
-
 <!-- badges: start -->
 
 [![License:
 GPL-3](https://img.shields.io/badge/License-GPL3-orange)](https://www.r-project.org/Licenses/)
 [![Website -
-pkgdown](https://img.shields.io/badge/website-githubpage-green)](https://illustratien.github.io/toolPhD/articles/toolPhD.html)
+pkgdown](https://img.shields.io/badge/website-tutorial-green)](https://illustratien.github.io/toolPhD/articles/toolPhD.html)
 [![Github Code
 Size](https://img.shields.io/github/languages/code-size/Illustratien/toolPhD.svg)](https://github.com/Illustratien/toolPhD)
 [![Last-changedate](https://img.shields.io/badge/last%20change-2023--09--12-yellowgreen.svg)](https://github.com/Illustratien/toolPhD/commits/master)
+[![minimal R
+version](https://img.shields.io/badge/R%3E%3D-3.5.0-6666ff.svg?logo=R)](https://cran.r-project.org/)
+[![rstudio mirror
+downloads](https://cranlogs.r-pkg.org/badges/grand-total/toolPhD?color=green)](https://CRAN.R-project.org/package=toolPhD)
 <!-- [![Codecov test coverage](https://codecov.io/gh/Illustratien/toolPhD/branch/master/graph/badge.svg)](https://app.codecov.io/gh/Illustratien/toolPhD?branch=master) -->
-<!-- [![minimal R version](https://img.shields.io/badge/R>%3D-3.5.0-6666ff.svg?logo=R)](https://cran.r-project.org/) -->
 <!-- [![.](https://raw.githubusercontent.com/vitr/google-analytics-beacon/master/static/badge-flat.gif)](https://github.com/Illustratien/google-analytics-beacon) -->
-<!-- [![rstudio mirror downloads](https://cranlogs.r-pkg.org/badges/grand-total/toolPhD?color=green)](https://CRAN.R-project.org/package=toolPhD) -->
 
 <!-- badges: end -->
 <!-- ## Description -->
@@ -36,14 +35,14 @@ Size](https://img.shields.io/github/languages/code-size/Illustratien/toolPhD.svg
 
 ## Introduction
 
-<img src="https://raw.githubusercontent.com/Illustratien/toolPhD/master/docs/toolPhD.png" align="right" alt="logo" width="200" height = "200" style = "padding: 10px; border: none; float: right;">
-The package `toolPhD` is part of the journey aside from publication
-works of PhD. The package is a collection of functions which the author
-find useful and hopefully also for you.
+<img src="https://raw.githubusercontent.com/Illustratien/toolPhD/master/docs/toolPhD.png" align="right" alt="logo" width="150" height = "150" style = "padding: 10px; border: none; float: right;">
+
+The package `toolPhD` is by-product of the journey of author’s PhD.
+Hopefully you find these function also useful for you.
 
 Further analysis for original publication using this package can be
-found in the link (
-[click](https://github.com/Illustratien/Wang_2023_TAAG)).
+found in the link ([click
+here](https://github.com/Illustratien/Wang_2023_TAAG)).
 
 ## Installation
 

@@ -15,10 +15,11 @@
 #' @importFrom usethis use_pipe
 #' @importFrom Rdpack reprompt
 #'
-#' @references
-#' \insertRef{warton2012}{toolPhD}
-#'
 #' @export
+# @references
+#\insertRef{warton2012}{toolPhD}
+#'
+#'
 #'
 #' @examples
 #' #Define example dataset
