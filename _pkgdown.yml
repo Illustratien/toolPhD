@@ -1,0 +1,19 @@
+template:
+  bootstrap: 5
+reference:
+- title: "table function"
+  desc: >
+    Functions related to sma.
+  contents:
+  - round_scale
+  - view_df
+- title: "statistic function"
+  desc: >
+    Functions related to sma.
+  contents:
+  - starts_with("sma")
+- title: "ggplot2 theme function"
+  desc: >
+    Functions makes your plot more beautiful.
+  contents:
+  - starts_with("theme")
