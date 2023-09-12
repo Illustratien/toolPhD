@@ -1,0 +1,104 @@
+---
+title: "Introduction to toolPhD"
+author: 'Tien-Cheng Wang'
+date: "`r Sys.Date()`"
+output:
+  pdf_document:
+    fig_caption: no
+    toc: no
+  html_document:
+    df_print: paged
+    toc: yes
+vignette: >
+  %\VignetteIndexEntry{Introduction to toolPhD}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+csl: https://tinyurl.com/apa6-meta-analysis
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(magrittr);suppressWarnings(library(dplyr));
+suppressWarnings(library(ggplot2));library(tidyr);
+library(kableExtra);library(knitr);library(purrr)
+options(dplyr.summarise.inform = FALSE)
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Overview
+
+
+The package `toolPhD` is part of the journey aside from publication works of PhD. The package is a collection of functions which the author find useful and hopefully also for you.
+
+
+The goal of this vignette is to introduce users to these functions and get started in analyzing dataset with ease and comfortation. 
+
+Further analysis for original publication using this package can be found in the link ( [click](https://github.com/Illustratien/Wang_2023_TAAG)).
+
+## Installation
+The package can be installed using the following functions:
+
+```{r, eval=FALSE}
+# Install from CRAN
+install.packages('toolPhD', dependencies=TRUE)
+
+# Install development version from Github
+devtools::install_github("Illustratien/toolPhD")
+
+```
+
+Then the package can be loaded using the function
+```{r}
+library(toolPhD)
+```
+
+
+
+## Structure overview of toolPhD
+
+toolPhD contains different functions to calculate stability indices, including:
+
+1.  over view of data frame
+2.  round scale 
+\clearpage
+
+<!-- ## Build-in data set -->
+
+<!-- The default data set `Data` is the subset of $APSIM$ simulated wheat data set, which includes 5 genotypes in 4 locations for 4 years, with 2 nitrogen application rates, 2 sowing dates, and 2 $CO_2$ levels of treatments [@casadebaig2016]. Full dataset used in the publication see here [click](https://zenodo.org/record/4729636). -->
+
+<!-- `Data` in this package is a data frame with 640 observations and 8 variables. -->
+
+<!-- : Data Structure -->
+
+<!-- | Parameters | Number | Description | -->
+<!-- | :--- | ---: | :--- | -->
+<!-- | Trait |   | Wheat yield ($kg~ha^{-1}$).|  -->
+<!-- | Genotype | 5 | varieties.| -->
+<!-- | Environment | 128 | unique combination of environments for each genotype.| -->
+<!-- | Year | 4 | years.| -->
+<!-- | Sites | 4 | locations.| -->
+<!-- | Nitrogen | 2 | nitrogen application levels.| -->
+<!-- | $CO_2$ | 2 | $CO_2$ concentration levels.| -->
+<!-- | Sowing | 2 | sowing dates.| -->
+
+\clearpage
+
+## Examples
+```{r}
+rm(list=ls())
+library(toolPhD)
+### load data
+
+dplyr::glimpse(iris)
+view_df(iris)
+```
+\clearpage
+
+
+\newpage
+## Citing `toolPhD`
+Wang, TC.TooPhD: get your PhD smoother.
+

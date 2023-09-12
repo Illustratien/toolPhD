@@ -15,8 +15,8 @@ a vector, which adjust format unit for each element
 \description{
 \code{round_scale} display the tidy unit of your observations
 }
-\details{
-
+\examples{
+c(100.1,10.1,1.1,0.1,0.01,0.001,0.0001,0.00001) \%>\% round_scale()
 }
 \author{
 Tien-Cheng Wang

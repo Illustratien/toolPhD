@@ -12,12 +12,13 @@
 #' @author Tien-Cheng Wang
 #'
 #' @importFrom purrr map_dfr
-#' @importFrom dplyr %>%
+#' @importFrom usethis use_pipe
 #' @importFrom Rdpack reprompt
 #'
 #' @export
 #'
 #' @examples
+#' vie_df(mtcars)
 view_df <- function(x){
   # have the range/elements of each column
   x <- as.data.frame(x)
