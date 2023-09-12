@@ -42,8 +42,8 @@ Further analysis for original publication using this package can be found in the
 The package can be installed using the following functions:
 
 ```{r, eval=FALSE}
-# Install from CRAN
-install.packages('toolPhD', dependencies=TRUE)
+# Install from CRAN, release soon
+# install.packages('toolPhD', dependencies=TRUE)
 
 # Install development version from Github
 devtools::install_github("Illustratien/toolPhD")
@@ -100,5 +100,5 @@ view_df(iris)
 
 \newpage
 ## Citing `toolPhD`
-Wang, TC.TooPhD: get your PhD smoother.
+Wang, TC.ToolPhD: get your PhD smoother.
 
