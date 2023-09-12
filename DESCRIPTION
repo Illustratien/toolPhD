@@ -1,12 +1,11 @@
 Package: toolPhD
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Pave your academic path with profession and aesthetic.
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Tien-Cheng Wang
+Maintainer: Tien-Cheng Wang <marseraser@gmail.com>
+Description: Here provide you functions for table formatting, plots and statistical analysis. Make your academic life easier, consistent and reproducible. 
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.3
