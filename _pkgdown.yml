@@ -1,5 +1,6 @@
 template:
   bootstrap: 5
+  bootswatch: solar
 reference:
 - title: "table function"
   desc: >

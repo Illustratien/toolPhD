@@ -1,26 +1,7 @@
-template:
-  bootstrap: 5
 pandoc: 3.1.1
 pkgdown: 2.0.7
 pkgdown_sha: ~
 articles:
   toolPhD: toolPhD.html
-last_built: 2023-09-12T17:55Z
+last_built: 2023-09-12T21:18Z
 
-reference:
-- title: "table function"
-  desc: >
-    Functions related to sma.
-  contents:
-  - round_scale
-  - view_df
-- title: "statistic function"
-  desc: >
-    Functions related to sma.
-  contents:
-  - starts_with("sma")
-- title: "ggplot2 theme function"
-  desc: >
-    Functions makes your plot more beautiful.
-  contents:
-  - starts_with("theme")
