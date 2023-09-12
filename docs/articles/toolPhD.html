@@ -72,46 +72,33 @@ Wang</h4>
 
     
     
-<div class="section level2">
-<h2 id="overview">Overview<a class="anchor" aria-label="anchor" href="#overview"></a>
-</h2>
-<p>The package <code>toolPhD</code> is part of the journey aside from
-publication works of PhD. The package is a collection of functions which
-the author find useful and hopefully also for you.</p>
-<p>The goal of this vignette is to introduce users to these functions
-and get started in analyzing dataset with ease and comfortation.</p>
-<p>Further analysis for original publication using this package can be
-found in the link ( <a href="https://github.com/Illustratien/Wang_2023_TAAG" class="external-link">click</a>).</p>
-</div>
-<div class="section level2">
-<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
-</h2>
-<p>The package can be installed using the following functions:</p>
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># Install from CRAN, release soon</span></span>
-<span><span class="co"># install.packages('toolPhD', dependencies=TRUE)</span></span>
-<span></span>
-<span><span class="co"># Install development version from Github</span></span>
-<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"Illustratien/toolPhD"</span><span class="op">)</span></span></code></pre></div>
 <p>Then the package can be loaded using the function</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">toolPhD</span><span class="op">)</span></span></code></pre></div>
-</div>
 <div class="section level2">
 <h2 id="structure-overview-of-toolphd">Structure overview of toolPhD<a class="anchor" aria-label="anchor" href="#structure-overview-of-toolphd"></a>
 </h2>
 <p>toolPhD contains different functions to calculate stability indices,
 including:</p>
-<ol style="list-style-type: decimal">
-<li>over view of data frame</li>
-<li>round scale </li>
-</ol>
-<!-- ## Build-in data set --><!-- The default data set `Data` is the subset of $APSIM$ simulated wheat data set, which includes 5 genotypes in 4 locations for 4 years, with 2 nitrogen application rates, 2 sowing dates, and 2 $CO_2$ levels of treatments [@casadebaig2016]. Full dataset used in the publication see here [click](https://zenodo.org/record/4729636). --><!-- `Data` in this package is a data frame with 640 observations and 8 variables. --><!-- : Data Structure --><!-- | Parameters | Number | Description | --><!-- | :--- | ---: | :--- | --><!-- | Trait |   | Wheat yield ($kg~ha^{-1}$).|  --><!-- | Genotype | 5 | varieties.| --><!-- | Environment | 128 | unique combination of environments for each genotype.| --><!-- | Year | 4 | years.| --><!-- | Sites | 4 | locations.| --><!-- | Nitrogen | 2 | nitrogen application levels.| --><!-- | $CO_2$ | 2 | $CO_2$ concentration levels.| --><!-- | Sowing | 2 | sowing dates.| -->
+<!-- ## Build-in data set -->
+<!-- The default data set `Data` is the subset of $APSIM$ simulated wheat data set, which includes 5 genotypes in 4 locations for 4 years, with 2 nitrogen application rates, 2 sowing dates, and 2 $CO_2$ levels of treatments [@casadebaig2016]. Full dataset used in the publication see here [click](https://zenodo.org/record/4729636). -->
+<!-- `Data` in this package is a data frame with 640 observations and 8 variables. -->
+<!-- : Data Structure -->
+<!-- | Parameters | Number | Description | -->
+<!-- | :--- | ---: | :--- | -->
+<!-- | Trait |   | Wheat yield ($kg~ha^{-1}$).|  -->
+<!-- | Genotype | 5 | varieties.| -->
+<!-- | Environment | 128 | unique combination of environments for each genotype.| -->
+<!-- | Year | 4 | years.| -->
+<!-- | Sites | 4 | locations.| -->
+<!-- | Nitrogen | 2 | nitrogen application levels.| -->
+<!-- | $CO_2$ | 2 | $CO_2$ concentration levels.| -->
+<!-- | Sowing | 2 | sowing dates.| -->
 </div>
 <div class="section level2">
 <h2 id="examples">Examples<a class="anchor" aria-label="anchor" href="#examples"></a>
 </h2>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/rm.html" class="external-link">rm</a></span><span class="op">(</span>list<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/ls.html" class="external-link">ls</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">toolPhD</span><span class="op">)</span></span>
 <span><span class="co">### load data</span></span>
@@ -131,12 +118,6 @@ including:</p>
 <span><span class="co">#&gt; 3 Petal.Length                       1~6.9</span></span>
 <span><span class="co">#&gt; 4  Petal.Width                     0.1~2.5</span></span>
 <span><span class="co">#&gt; 5      Species setosa,versicolor,virginica</span></span></code></pre></div>
-<div style="page-break-after: always;"></div>
-</div>
-<div class="section level2">
-<h2 id="citing-toolphd">Citing <code>toolPhD</code><a class="anchor" aria-label="anchor" href="#citing-toolphd"></a>
-</h2>
-<p>Wang, TC.ToolPhD: get your PhD smoother.</p>
 </div>
   </div>
 
@@ -152,7 +133,7 @@ including:</p>
 
       <footer><div class="copyright">
   <p></p>
-<p>Developed by The package maintainer.</p>
+<p>Developed by Tien-Cheng Wang.</p>
 </div>
 
 <div class="pkgdown">
