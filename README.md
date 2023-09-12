@@ -13,7 +13,7 @@
 [![License:
 GPL-3](https://img.shields.io/badge/License-GPL3-orange)](https://www.r-project.org/Licenses/)
 [![Website -
-pkgdown](https://img.shields.io/badge/website-githubpage-green)](https://Illustratien.github.io/toolPhD/)
+pkgdown](https://img.shields.io/badge/website-githubpage-green)](https://illustratien.github.io/toolPhD/)
 [![Github Code
 Size](https://img.shields.io/github/languages/code-size/Illustratien/toolPhD.svg)](https://github.com/Illustratien/toolPhD)
 [![Last-changedate](https://img.shields.io/badge/last%20change-2023--09--12-yellowgreen.svg)](https://github.com/Illustratien/toolPhD/commits/master)
@@ -57,7 +57,7 @@ remotes::install_github("Illustratien/toolPhD")
 
 There are many useful functions in this package. For detailed tutorial
 with examples and references: [click
-here](https://illustratien.github.io/toolPhD/articles/toolPhD.html).
+here](https://illustratien.github.io/toolPhD/).
 
 <!-- ## What's new -->
 <!-- To know whats new in this version type: -->
