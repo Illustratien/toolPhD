@@ -30,7 +30,7 @@ text2 <- unlist(strsplit(paste0("This R",Section[[1]][2]),"\n"))
 ###### *Wang, T-C.*
 <!-- badges: start -->
 [![License: GPL-3](https://img.shields.io/badge/License-GPL3-orange)](https://www.r-project.org/Licenses/)
-[![Website - pkgdown](https://img.shields.io/badge/website-githubpage-green)](https://illustratien.github.io/toolPhD/)
+[![Website - pkgdown](https://img.shields.io/badge/website-githubpage-green)](https://illustratien.github.io/toolPhD/articles/toolPhD.html)
 [![Github Code Size](https://img.shields.io/github/languages/code-size/Illustratien/toolPhD.svg)](https://github.com/Illustratien/toolPhD)
 [![Last-changedate](https://img.shields.io/badge/last%20change-`r gsub('-', '--', Sys.Date())`-yellowgreen.svg)](https://github.com/Illustratien/toolPhD/commits/master)
 <!-- [![Codecov test coverage](https://codecov.io/gh/Illustratien/toolPhD/branch/master/graph/badge.svg)](https://app.codecov.io/gh/Illustratien/toolPhD?branch=master) -->
@@ -52,7 +52,11 @@ text2 <- unlist(strsplit(paste0("This R",Section[[1]][2]),"\n"))
 <!-- `r text2[4]` -->
 <!-- `r text2[5]` -->
 <!-- `r text2[6]` -->
+## Introduction
+<img src="https://raw.githubusercontent.com/Illustratien/toolPhD/master/docs/toolPhD.png" align="right" alt="logo" width="200" height = "200" style = "padding: 10px; border: none; float: right;">
+The package `toolPhD` is part of the journey aside from publication works of PhD. The package is a collection of functions which the author find useful and hopefully also for you.
 
+Further analysis for original publication using this package can be found in the link ( [click](https://github.com/Illustratien/Wang_2023_TAAG)).
 
 ## Installation
 <!-- The package can be installed from CRAN as follows: -->
@@ -73,7 +77,7 @@ remotes::install_github("Illustratien/toolPhD")
 
 ## Descriptions
 There are many useful functions in this package. For detailed tutorial with examples and references:
- [click here](https://illustratien.github.io/toolPhD/).
+ [click here](https://illustratien.github.io/toolPhD/articles/toolPhD.html).
 
 <!-- ## What's new -->
 <!-- To know whats new in this version type: -->
@@ -85,8 +89,16 @@ There are many useful functions in this package. For detailed tutorial with exam
 
 ## Citing `toolPhD`
 To cite the methods in the package please use:
+Wang T (2023). toolPhD: Pave your academic path with profession and aesthetic.. R package version 0.1.0.
 
-Wang T.C(2023).ToolPhD: Accomplish your academic publication with ease and aesthetic..
+```
+@Manual{,
+  title = {toolPhD: Pave your academic path with profession and aesthetic.},
+  author = {Tien-Cheng Wang},
+  year = {2023},
+  note = {R package version 0.1.0},
+}
+```
 
 <!-- # ```{r, echo = FALSE} -->
 <!-- # detach("package:toolPhD", unload=TRUE) -->

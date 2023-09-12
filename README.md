@@ -13,7 +13,7 @@
 [![License:
 GPL-3](https://img.shields.io/badge/License-GPL3-orange)](https://www.r-project.org/Licenses/)
 [![Website -
-pkgdown](https://img.shields.io/badge/website-githubpage-green)](https://illustratien.github.io/toolPhD/)
+pkgdown](https://img.shields.io/badge/website-githubpage-green)](https://illustratien.github.io/toolPhD/articles/toolPhD.html)
 [![Github Code
 Size](https://img.shields.io/github/languages/code-size/Illustratien/toolPhD.svg)](https://github.com/Illustratien/toolPhD)
 [![Last-changedate](https://img.shields.io/badge/last%20change-2023--09--12-yellowgreen.svg)](https://github.com/Illustratien/toolPhD/commits/master)
@@ -24,17 +24,26 @@ Size](https://img.shields.io/github/languages/code-size/Illustratien/toolPhD.svg
 
 <!-- badges: end -->
 <!-- ## Description -->
-<!-- More about what it does (maybe more than one line)
-Use four spaces when indenting paragraphs within the Description. -->
-<!-- More about what it does (maybe more than one line)  Use four spaces when indenting paragraphs within the Description. -->
-<!-- More about what it does (maybe more than one line)
-Use four spaces when indenting paragraphs within the Description. There are functions in this package. -->
+<!-- Here provide you functions for table formatting, plots and statistical analysis. Make your academic life easier, consistent and reproducible. -->
+<!-- Here provide you functions for table formatting, plots and statistical analysis. Make your academic life easier, consistent and reproducible. -->
+<!-- Here provide you functions for table formatting, plots and statistical analysis. Make your academic life easier, consistent and reproducible. There are functions in this package. -->
 <!-- This RNA -->
 <!-- NA -->
 <!-- NA -->
 <!-- NA -->
 <!-- NA -->
 <!-- NA -->
+
+## Introduction
+
+<img src="https://raw.githubusercontent.com/Illustratien/toolPhD/master/docs/toolPhD.png" align="right" alt="logo" width="200" height = "200" style = "padding: 10px; border: none; float: right;">
+The package `toolPhD` is part of the journey aside from publication
+works of PhD. The package is a collection of functions which the author
+find useful and hopefully also for you.
+
+Further analysis for original publication using this package can be
+found in the link (
+[click](https://github.com/Illustratien/Wang_2023_TAAG)).
 
 ## Installation
 
@@ -57,7 +66,7 @@ remotes::install_github("Illustratien/toolPhD")
 
 There are many useful functions in this package. For detailed tutorial
 with examples and references: [click
-here](https://illustratien.github.io/toolPhD/).
+here](https://illustratien.github.io/toolPhD/articles/toolPhD.html).
 
 <!-- ## What's new -->
 <!-- To know whats new in this version type: -->
@@ -67,10 +76,16 @@ here](https://illustratien.github.io/toolPhD/).
 
 ## Citing `toolPhD`
 
-To cite the methods in the package please use:
+To cite the methods in the package please use: Wang T (2023). toolPhD:
+Pave your academic path with profession and aesthetic.. R package
+version 0.1.0.
 
-Wang T.C(2023).ToolPhD: Accomplish your academic publication with ease
-and aesthetic..
+    @Manual{,
+      title = {toolPhD: Pave your academic path with profession and aesthetic.},
+      author = {Tien-Cheng Wang},
+      year = {2023},
+      note = {R package version 0.1.0},
+    }
 
 <!-- # ```{r, echo = FALSE} -->
 <!-- # detach("package:toolPhD", unload=TRUE) -->
