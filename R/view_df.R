@@ -32,8 +32,7 @@ view_df <- function(x){
       }else if(is.numeric(na.omit(ue))|all(grepl("^[0-9]+$", na.omit(ue)))){
         ue <- round_scale(ue)
         if (any(is.na(ue))){
-          content <- paste(range(as.numeric(na.omit(ue))),collapse="~") %>%
-            paste0(.," include NA")
+          content <- paste0(paste(range(as.numeric(na.omit(ue))),collapse="~")," include NA")
         }else{
           content <- paste(range(as.numeric(ue)),collapse="~")
         }
@@ -41,7 +40,7 @@ view_df <- function(x){
       }else{
         content <- paste0("Levels number:",length(ue))      }
     }
-    data.frame(colnam=names(x) %>% .[.x],
+    data.frame(colnam=names(x)[.x],
                info=content)
   })
 }
