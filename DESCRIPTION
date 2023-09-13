@@ -1,6 +1,6 @@
 Package: toolPhD
 Type: Package
-Title: Pave your academic path with profession and aesthetic.
+Title: Accomplish your academic publication with ease and aesthetic.
 Version: 0.1.0
 Authors@R: person('Tien-Cheng','Wang', email ='wangtien@student.hu-berlin.de',role=c('aut','cre'))
 Author: Tien-Cheng Wang [aut, cre]

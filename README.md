@@ -2,7 +2,7 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 <!-- <img src="https://raw.githubusercontent.com/Illustratien/toolPhD/master/inst/extdata/toolPhD.png" align="right" alt="logo" width="200" height = "200" style = "padding: 10px; border: none; float: right;"> -->
 
-## ToolPhD: Accomplish your academic publication with ease and aesthetic.
+## toolPhD: Accomplish your academic publication with ease and aesthetic.
 
 <!-- Version : [0.1.0](https://illustratien.github.io/toolPhD/articles/toolPhD.html#version-history); -->
 <!-- badges: start -->
@@ -13,7 +13,7 @@ GPL-3](https://img.shields.io/badge/License-GPL3-orange)](https://www.r-project.
 pkgdown](https://img.shields.io/badge/website-tutorial-green)](https://illustratien.github.io/toolPhD/articles/toolPhD.html)
 [![Github Code
 Size](https://img.shields.io/github/languages/code-size/Illustratien/toolPhD.svg)](https://github.com/Illustratien/toolPhD)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2023--09--12-yellowgreen.svg)](https://github.com/Illustratien/toolPhD/commits/master)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2023--09--13-yellowgreen.svg)](https://github.com/Illustratien/toolPhD/commits/master)
 [![minimal R
 version](https://img.shields.io/badge/R%3E%3D-3.5.0-6666ff.svg?logo=R)](https://cran.r-project.org/)
 [![rstudio mirror
@@ -64,8 +64,8 @@ remotes::install_github("Illustratien/toolPhD")
 ## Descriptions
 
 There are many useful functions in this package. For detailed tutorial
-with examples and references: [click
-here](https://illustratien.github.io/toolPhD/articles/toolPhD.html).
+with examples and references, please click the side tab `Get started`
+for general tutorial and `Refernce` for individual function example.
 
 <!-- ## What's new -->
 <!-- To know whats new in this version type: -->
@@ -76,7 +76,7 @@ here](https://illustratien.github.io/toolPhD/articles/toolPhD.html).
 ## Citing `toolPhD`
 
 To cite the methods in the package please use: Wang T (2023). toolPhD:
-Pave your academic path with profession and aesthetic.. R package
+Accomplish your academic publication with ease and aesthetic. R package
 version 0.1.0.
 
     @Manual{,

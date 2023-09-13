@@ -18,7 +18,7 @@
 #' @export
 #'
 #' @examples
-#' vie_df(mtcars)
+#' view_df(mtcars)
 view_df <- function(x){
   # have the range/elements of each column
   x <- as.data.frame(x)

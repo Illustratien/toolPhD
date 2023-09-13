@@ -18,21 +18,23 @@
 #' @export
 #'
 #' @examples
-#' c(100.1,10.1,1.1,0.1,0.01,0.001,0.0001,0.00001) %>% round_scale()
+#' vec <- c(100.1,10.1,1.1,0.1,0.01,0.001,0.0001,0.00001)
+#' round_scale(vec)
 round_scale <-function(vec){
   # choose approriate scale for each element in the vector
   # useful in table dsiplay
   # return the appropriate formatted digit vector
-  purrr::map_dbl(vec,~{
+  as.character(
+    purrr::map_dbl(vec,~{
 
-    if(is.na(.x)|.x<0.0001){
-      .x
-    }else if(.x<0.001){round(.x,4)
-    }else if(.x>=0.001&.x<0.01){round(.x,3)
-    }else if(.x>=0.01&.x<1){round(.x,2)
-    }else if(.x>=1){
-      round(.x,1)
-    }
-  })%>% as.character()
+      if(is.na(.x)|.x<0.0001){
+        .x
+      }else if(.x<0.001){round(.x,4)
+      }else if(.x>=0.001&.x<0.01){round(.x,3)
+      }else if(.x>=0.01&.x<1){round(.x,2)
+      }else if(.x>=1){
+        round(.x,1)
+      }
+    }))
 }
 

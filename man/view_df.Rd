@@ -16,7 +16,7 @@ a data table with range/elements of each column
 \code{view_df} display the range/elements of each column
 }
 \examples{
-vie_df(mtcars)
+view_df(mtcars)
 }
 \author{
 Tien-Cheng Wang

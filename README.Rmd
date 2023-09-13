@@ -23,7 +23,7 @@ Section<- strsplit(wholetext,"This R")
 text1 <- Section[[1]][1]
 text2 <- unlist(strsplit(paste0("This R",Section[[1]][2]),"\n"))
 ```
-## ToolPhD: Accomplish your academic publication with ease and aesthetic.
+## toolPhD: Accomplish your academic publication with ease and aesthetic.
 
 <!-- Version : [`r getNamespaceVersion("toolPhD")`](https://illustratien.github.io/toolPhD/articles/toolPhD.html#version-history); -->
 <!-- badges: start -->
@@ -76,8 +76,7 @@ remotes::install_github("Illustratien/toolPhD")
 ```
 
 ## Descriptions
-There are many useful functions in this package. For detailed tutorial with examples and references:
- [click here](https://illustratien.github.io/toolPhD/articles/toolPhD.html).
+There are many useful functions in this package. For detailed tutorial with examples and references, please click the side tab `Get started` for general tutorial and `Refernce` for individual function example.
 
 <!-- ## What's new -->
 <!-- To know whats new in this version type: -->
@@ -89,7 +88,7 @@ There are many useful functions in this package. For detailed tutorial with exam
 
 ## Citing `toolPhD`
 To cite the methods in the package please use:
-Wang T (2023). toolPhD: Pave your academic path with profession and aesthetic.. R package version 0.1.0.
+Wang T (2023). toolPhD: Accomplish your academic publication with ease and aesthetic. R package version 0.1.0.
 
 ```
 @Manual{,
