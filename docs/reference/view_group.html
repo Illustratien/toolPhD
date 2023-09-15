@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • toolPhD</title>
+<title>overview of data frame with group — view_group • toolPhD</title>
 
 
 <!-- jquery -->
@@ -39,7 +39,8 @@
 
 
 
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="overview of data frame with group — view_group" />
+<meta property="og:description" content="view_group display the range/elements of each column for selected group" />
 
 
 
@@ -58,7 +59,7 @@
   </head>
 
   <body data-spy="scroll" data-target="#toc">
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -108,78 +109,62 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>overview of data frame with group</h1>
+    <small class="dont-index">Source: <a href='https://github.com/Illustratien/toolPhD/blob/master/R/view_group.R'><code>R/view_group.R</code></a></small>
+    <div class="hidden name"><code>view_group.Rd</code></div>
     </div>
 
-    <table class="ref-index">
+    <div class="ref-description">
+    <p><code>view_group</code> display the range/elements of each column for selected group</p>
+    </div>
 
-    <colgroup>
-      
-      <col class="alias" />
-      <col class="title" />
-    </colgroup>
+    <pre class="usage"><span class='fu'>view_group</span><span class='op'>(</span><span class='va'>dat</span>, <span class='va'>g_vec</span>, t_vec <span class='op'>=</span> <span class='cn'>NULL</span><span class='op'>)</span></pre>
 
-    <tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      
-      
-    </tbody><tbody>
-      
-      
-      <tr>
-        
-        <td>
-          <p><code><a href="round_scale.html">round_scale()</a></code> </p>
-        </td>
-        <td><p>tidy digit of numbers</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="sma_cor.html">sma_cor()</a></code> </p>
-        </td>
-        <td><p>sma correlation matrix</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="sma_plot.html">sma_plot()</a></code> </p>
-        </td>
-        <td><p>sma plot</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="theme_phd_facet.html">theme_phd_facet()</a></code> </p>
-        </td>
-        <td><p>theme phd facet</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="theme_phd_main.html">theme_phd_main()</a></code> </p>
-        </td>
-        <td><p>theme phd main</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="view_df.html">view_df()</a></code> </p>
-        </td>
-        <td><p>overview of data frame</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="view_group.html">view_group()</a></code> </p>
-        </td>
-        <td><p>overview of data frame with group</p></td>
-      </tr>
-    </tbody>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>dat</th>
+      <td><p>a dataframe, preferably the wide format</p></td>
+    </tr>
+    <tr>
+      <th>g_vec</th>
+      <td><p>grouping vector, contain column names for grouping</p></td>
+    </tr>
+    <tr>
+      <th>t_vec</th>
+      <td><p>target vector, contain column names for examining the range and elements.</p></td>
+    </tr>
     </table>
-  </div>
 
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p>a data table with range/elements of each column</p>
+    <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
+
+    <p>Tien-Cheng Wang</p>
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'>view_group</span><span class='op'>(</span><span class='va'>iris</span>,<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Species"</span><span class='op'>)</span>,<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Sepal.Length"</span>,<span class='st'>"Petal.Length"</span><span class='op'>)</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;                                                                      
+#&gt; 1      Species                            setosa versicolor virginica
+#&gt; 2 Sepal.Length                           4.3~5.8      4.9~7   4.9~7.9
+#&gt; 3 Petal.Length 1,1.1,1.2,1.3,1.4,1.5,1.6,1.7,1.9      3~5.1   4.5~6.9</div><div class='input'><span class='fu'>view_group</span><span class='op'>(</span><span class='va'>iris</span>,<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"Species"</span><span class='op'>)</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;                                                 
+#&gt; 1      Species                            setosa
+#&gt; 2 Sepal.Length                           4.3~5.8
+#&gt; 3  Sepal.Width                           2.3~4.4
+#&gt; 4 Petal.Length 1,1.1,1.2,1.3,1.4,1.5,1.6,1.7,1.9
+#&gt; 5  Petal.Width           0.1,0.2,0.3,0.4,0.5,0.6
+#&gt;                                              
+#&gt; 1                        versicolor virginica
+#&gt; 2                             4.9~7   4.9~7.9
+#&gt; 3                             2~3.4   2.2~3.8
+#&gt; 4                             3~5.1   4.5~6.9
+#&gt; 5 1,1.1,1.2,1.3,1.4,1.5,1.6,1.7,1.8   1.4~2.5</div></pre>
+  </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
       <h2 data-toc-skip>Contents</h2>
