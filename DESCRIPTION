@@ -12,20 +12,16 @@ VignetteBuilder: knitr
 Imports: 
     dplyr,
     data.table,
-    Rdpack,
-    nortest,
+    smatr,
+    ggplot2,
+    purrr,
     stats
 Suggests: 
     testthat (>= 3.0.0),
-    ggplot2,
     knitr,
     rmarkdown,
     pkgdown,
-    pander,
-    XML,
-    httr,
-    RCurl,
-    covr
+    pander
 RdMacros:
     Rdpack
 BugReports: https://github.com/Illustratien/toolPhD/issues
