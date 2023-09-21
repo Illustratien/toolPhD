@@ -26,7 +26,10 @@
 #' sma_cor(mtcars[,1:7])
 
 sma_cor<- function(mat){
-
+  # sma will throw error if there is an column containing identical values
+  nonidentical_col <-    which(apply(na.omit(mat),MARGIN = 2,FUN = function(x){length(unique(x))>1}))
+  # first screen it.
+  mat <- mat[,nonidentical_col]
   nam_mat<- names(mat)
   n <- ncol(mat)
   names(mat) <- paste0("V",1:n)
