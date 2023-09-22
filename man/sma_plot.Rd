@@ -4,14 +4,14 @@
 \alias{sma_plot}
 \title{sma plot}
 \usage{
-sma_plot(data, x_string, y_string)
+sma_plot(datf, xvar, yvar)
 }
 \arguments{
-\item{data}{a dataframe, include columns x and y}
+\item{datf}{a dataframe, include columns x and y}
 
-\item{x_string}{string for colmun name x}
+\item{xvar}{unquoted string for column name x}
 
-\item{y_string}{string for column name y}
+\item{yvar}{unquoted string for column name y}
 }
 \value{
 a ggplot with regression line and r2 text
@@ -20,7 +20,7 @@ a ggplot with regression line and r2 text
 \code{sma_plot} plot sma correlation analysis add regression line and add r2
 }
 \examples{
-sma_plot(mtcars,x_string="mpg",y_string = "cyl")
+sma_plot(mtcars,xvar=mpg,yvar = cyl)
 }
 \author{
 Tien-Cheng Wang
