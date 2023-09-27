@@ -46,7 +46,7 @@ aesthetic facet frame
 }
 \examples{
 library(ggplot2)
-p <- ggplot(mtcars,aes(x=disp,y=hp)) + geom_point()
+p <- ggplot(mtcars,aes(x=disp,y=hp)) + geom_point(size=3,shape=1)
 cowplot::plot_grid(p,p+theme_phd_main())
 }
 \author{

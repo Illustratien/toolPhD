@@ -14,15 +14,13 @@
 #' @param r distance to right border
 #' @param b distance to bottom border
 #' @param l distance to left border
+#' @param frame logical, default is FALSE, if TRUE, frame will be added.
 #'
 #' @return aesthetic facet frame
 #'
 #' @author Tien-Cheng Wang
 #'
-#' @importFrom smatr sma
 #' @import ggplot2
-#' @importFrom ggpp geom_text_npc
-#' @importFrom purrr map_dfr
 #' @importFrom usethis use_pipe
 #' @importFrom Rdpack reprompt
 #'
@@ -30,22 +28,22 @@
 #'
 #' @examples
 #' library(ggplot2)
-#' p <- ggplot(mtcars,aes(x=disp,y=hp)) + geom_point()+facet_grid(~cyl)
+#' p <- ggplot(mtcars,aes(x=disp,y=hp)) + geom_point(size=3,shape=1)+facet_grid(~cyl)
 #' cowplot::plot_grid(p,p+theme_phd_facet())
-#'
+#' cowplot::plot_grid(p,p+theme_phd_facet(frame=T))
 theme_phd_facet <- function(ax.txt.siz=NULL,ax.tit.siz=NULL,lgd.txt.siz=NULL,lgd.tit.siz=NULL,strp.txt.siz=NULL,
-                     t=NULL,r=NULL,b=NULL,l=NULL, ...){
+                     t=NULL,r=NULL,b=NULL,l=NULL, frame=FALSE,...){
   if (is.null(ax.txt.siz)){ax.txt.siz <-12}
   if (is.null(ax.tit.siz)){ax.tit.siz <- 14}
   if (is.null(lgd.txt.siz)){lgd.txt.siz <- 10}
   if (is.null(lgd.tit.siz)){lgd.tit.siz <- 10}
-  if (is.null(strp.txt.siz)){strp.txt.siz <- 10}
+  if (is.null(strp.txt.siz)){strp.txt.siz <- 14}
   if(is.null(t)){t<-5}
   if(is.null(r)){r<-5}
   if(is.null(b)){b<-10}
   if(is.null(l)){l<-1}
 
-  ggplot2::theme_classic()+
+  ggplot2::theme_test()+
     ggplot2::theme(
 
       # axis text
@@ -53,8 +51,8 @@ theme_phd_facet <- function(ax.txt.siz=NULL,ax.tit.siz=NULL,lgd.txt.siz=NULL,lgd
       axis.text.y = element_text(size=ax.txt.siz,margin = margin(r=4)), # tick label size
       # axis title
       axis.title   =element_text(size=ax.tit.siz,face="bold"),# axis title size
-      axis.title.y = element_text(margin = margin(r=10),vjust=-1),# spacing of y and tick
-      axis.title.x = element_text(margin = margin(b=10),vjust=-4), # spacing of x and axis
+      axis.title.y = element_text(margin = margin(r=15),vjust=-1),# spacing of y and tick
+      axis.title.x = element_text(margin = margin(b=15),vjust=-4), # spacing of x and axis
       # axis tick
       axis.ticks   =element_line(size = 1,color="black"),# tick thickness
       axis.ticks.length=unit(.2, "cm"),# tick length
@@ -63,7 +61,8 @@ theme_phd_facet <- function(ax.txt.siz=NULL,ax.tit.siz=NULL,lgd.txt.siz=NULL,lgd
       strip.text.y   = element_text(size=strp.txt.siz,face='bold'),
       strip.background = element_rect(colour = NA, fill=NA),
       # frame
-      panel.border = element_rect(colour = NA, fill=NA, size=1),
+      panel.border = element_rect(colour = ifelse(is.null(frame),NA,"black"),
+                                  fill=NA, size=1.5),
       axis.line = element_line(colour = "black",size=1),
       # axis.line    = element_line(size = 1, linetype = "solid"),# axis line
       # axis.line.x.top = element_line(size = 1, linetype = "solid"),# axis line
