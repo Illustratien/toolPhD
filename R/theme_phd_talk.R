@@ -43,19 +43,19 @@ theme_phd_talk<- function(ax.txt.siz=NULL,ax.tit.siz=NULL,lgd.txt.siz=NULL,lgd.t
   if (is.null(strp.txt.siz)){strp.txt.siz <- 25}
   if(is.null(t)){t<-3}
   if(is.null(r)){r<-3}
-  if(is.null(b)){b<-3}
+  if(is.null(b)){b<-5}
   if(is.null(l)){l<-3}
   if(is.null(frame)){frame<-2}
   if(is.null(frame.tick)){frame.tick<-1.5}
   ggplot2::theme_test()+
     ggplot2::theme(
       # axis text
-      axis.text.x = element_text(size=ax.txt.siz,face="bold",vjust=-2), # tick label size
+      axis.text.x = element_text(size=ax.txt.siz,face="bold",vjust=-1), # tick label size
       axis.text.y = element_text(size=ax.txt.siz,face="bold",margin = margin(r=8)), # tick label size
       # axis title
       axis.title   =element_text(size=ax.tit.siz,face="bold"),# axis title size
-      axis.title.y = element_text(margin = margin(r=30),vjust=-2),# spacing of y and tick
-      axis.title.x = element_text(margin = margin(b=30),vjust=-2), # spacing of x and axis
+      axis.title.y = element_text(margin = margin(r=20),vjust=-2),# spacing of y and tick
+      axis.title.x = element_text(margin = margin(b=15),vjust=-2), # spacing of x and axis
       # axis tick
       axis.ticks   =element_line(size = frame.tick),# tick thickness
       axis.ticks.length=unit(.3, "cm"),# tick length
