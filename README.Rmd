@@ -78,6 +78,12 @@ remotes::install_github("Illustratien/toolPhD")
 ## Descriptions
 There are many useful functions in this package. For detailed tutorial with examples and references, please click the side tab `Get started` for general tutorial and `Refernce` for individual function example.
 
+Here is an example for `violin_plot()`
+```{r}
+library(toolPhD)
+library(ggplot2)
+violin_plot(mtcars,cyl,mpg,labx="Number of cylinders",laby="Miles/gallon")
+```
 <!-- ## What's new -->
 <!-- To know whats new in this version type: -->
 
