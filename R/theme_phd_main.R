@@ -52,8 +52,8 @@ theme_phd_main<- function(ax.txt.siz=NULL,ax.tit.siz=NULL,lgd.txt.siz=NULL,lgd.t
       axis.text.y = element_text(size=ax.txt.siz,face="bold",margin = margin(r=8)), # tick label size
       # axis title
       axis.title   =element_text(size=ax.tit.siz,face="bold"),# axis title size
-      axis.title.y = element_text(margin = margin(r=10),vjust=-2),# spacing of y and tick
-      axis.title.x = element_text(margin = margin(b=),vjust=-2), # spacing of x and axis
+      axis.title.y = element_text(margin = margin(r=10),vjust=-1),# spacing of y and tick,
+      axis.title.x = element_text(margin = margin(b=10),vjust=-4), # spacing of x and axis
       # axis tick
       axis.ticks   =element_line(size = frame.tick),# tick thickness
       axis.ticks.length=unit(.3, "cm"),# tick length

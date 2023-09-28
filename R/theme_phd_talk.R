@@ -38,8 +38,8 @@ theme_phd_talk<- function(ax.txt.siz=NULL,ax.tit.siz=NULL,lgd.txt.siz=NULL,lgd.t
 
   if (is.null(ax.txt.siz)){ax.txt.siz <-18}
   if (is.null(ax.tit.siz)){ax.tit.siz <- 20}
-  if (is.null(lgd.txt.siz)){lgd.txt.siz <-13}
-  if (is.null(lgd.tit.siz)){lgd.tit.siz <- 13}
+  if (is.null(lgd.txt.siz)){lgd.txt.siz <-18}
+  if (is.null(lgd.tit.siz)){lgd.tit.siz <- 19}
   if (is.null(strp.txt.siz)){strp.txt.siz <- 25}
   if(is.null(t)){t<-3}
   if(is.null(r)){r<-3}
@@ -54,8 +54,8 @@ theme_phd_talk<- function(ax.txt.siz=NULL,ax.tit.siz=NULL,lgd.txt.siz=NULL,lgd.t
       axis.text.y = element_text(size=ax.txt.siz,face="bold",margin = margin(r=8)), # tick label size
       # axis title
       axis.title   =element_text(size=ax.tit.siz,face="bold"),# axis title size
-      axis.title.y = element_text(margin = margin(r=20),vjust=-2),# spacing of y and tick
-      axis.title.x = element_text(margin = margin(b=15),vjust=-2), # spacing of x and axis
+      axis.title.y = element_text(margin = margin(r=20),vjust=-1),# spacing of y and tick,
+      axis.title.x = element_text(margin = margin(b=20),vjust=-5), # spacing of x and axis
       # axis tick
       axis.ticks   =element_line(size = frame.tick),# tick thickness
       axis.ticks.length=unit(.3, "cm"),# tick length

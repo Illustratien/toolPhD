@@ -61,6 +61,13 @@ if (!require('remotes')) install.packages('remotes')
 remotes::install_github("Illustratien/toolPhD")
 ```
 
+To update the package:
+
+``` r
+detach("package:toolPhD", unload = TRUE)
+devtools::install_github("Illustratien/toolPhD")
+```
+
 ## Descriptions
 
 There are many useful functions in this package. For detailed tutorial
@@ -75,7 +82,7 @@ library(ggplot2)
 violin_plot(mtcars,cyl,mpg,labx="Number of cylinders",laby="Miles/gallon")
 ```
 
-![](inst/extdata/unnamed-chunk-4-1.png)<!-- --> <!-- ## What's new -->
+![](inst/extdata/unnamed-chunk-5-1.png)<!-- --> <!-- ## What's new -->
 <!-- To know whats new in this version type: -->
 
 <!-- ```{r, eval=FALSE} -->

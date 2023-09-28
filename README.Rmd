@@ -75,6 +75,11 @@ if (!require('remotes')) install.packages('remotes')
 remotes::install_github("Illustratien/toolPhD")
 ```
 
+To update the package:
+```{r, eval=FALSE}
+detach("package:toolPhD", unload = TRUE)
+devtools::install_github("Illustratien/toolPhD")
+```
 ## Descriptions
 There are many useful functions in this package. For detailed tutorial with examples and references, please click the side tab `Get started` for general tutorial and `Refernce` for individual function example.
 
