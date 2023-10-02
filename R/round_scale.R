@@ -27,12 +27,12 @@ round_scale <-function(vec){
   as.character(
     purrr::map_dbl(vec,~{
 
-      if(is.na(.x)|.x<0.0001){
+      if(is.na(.x)|abs(.x)<0.0001){
         .x
-      }else if(.x<0.001){round(.x,4)
-      }else if(.x>=0.001&.x<0.01){round(.x,3)
-      }else if(.x>=0.01&.x<1){round(.x,2)
-      }else if(.x>=1){
+      }else if(abs(.x)<0.001){round(.x,4)
+      }else if(abs(.x)>=0.001&abs(.x)<0.01){round(.x,3)
+      }else if(abs(.x)>=0.01&abs(.x)<1){round(.x,2)
+      }else if(abs(.x)>=1){
         round(.x,1)
       }
     }))
