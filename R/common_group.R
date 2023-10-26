@@ -1,9 +1,9 @@
-#' @title overview of data frame with group
+#' @title intersection of columns between groups
 #'
 #' @description
 #' \code{common_group} find the common elements of selected groups
 #'
-#' @keywords dataframe overview in groups
+#' @keywords dataframe intersection in groups
 #'
 #' @param dat a dataframe, preferably the wide format
 #' @param group_vec grouping vector, contain column names to be examine
@@ -14,8 +14,6 @@
 #'
 #' @importFrom purrr map
 #' @importFrom dplyr inner_join group_by across select all_of
-#' @importFrom usethis use_pipe
-#' @importFrom Rdpack reprompt
 #'
 #' @export
 #'

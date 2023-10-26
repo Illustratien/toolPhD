@@ -2,7 +2,7 @@
 % Please edit documentation in R/common_group.R
 \name{common_group}
 \alias{common_group}
-\title{overview of data frame with group}
+\title{intersection of columns between groups}
 \usage{
 common_group(dat, group_vec, ref_vec)
 }
@@ -29,4 +29,4 @@ Tien-Cheng Wang
 \keyword{dataframe}
 \keyword{groups}
 \keyword{in}
-\keyword{overview}
+\keyword{intersection}
