@@ -7,7 +7,7 @@
 sma_cor(mat)
 }
 \arguments{
-\item{mat}{a dataframe, include numeric columns for correlation}
+\item{dat}{a dataframe, include only numeric columns for correlation}
 }
 \value{
 a list of three elements: 1. `r.mat`r matrix, 2.`p.mat` p-value matrix and 3 `s.mat` slope matrix.
@@ -16,7 +16,7 @@ a list of three elements: 1. `r.mat`r matrix, 2.`p.mat` p-value matrix and 3 `s.
 \code{sma_cor} calculate sma correlation matrix for each complete pairs.
 }
 \examples{
-#Define example dataset
+# numeric dataframe
 sma_cor(mtcars[,1:7])
 }
 \author{
