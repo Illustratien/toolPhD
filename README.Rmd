@@ -8,7 +8,7 @@ always_allow_html: true
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "",
-  fig.path = "inst/extdata/"
+  fig.path = "man/figures/"
 )
 suppressWarnings(devtools::load_all("."))
 ```

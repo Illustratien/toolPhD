@@ -82,8 +82,8 @@ library(ggplot2)
 violin_plot(mtcars,cyl,mpg,labx="Number of cylinders",laby="Miles/gallon")
 ```
 
-![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
-<!-- ## What's new --> <!-- To know whats new in this version type: -->
+![](man/figures/unnamed-chunk-5-1.png)<!-- --> <!-- ## What's new -->
+<!-- To know whats new in this version type: -->
 
 <!-- ```{r, eval=FALSE} -->
 <!-- news(package='toolPhD') -->
