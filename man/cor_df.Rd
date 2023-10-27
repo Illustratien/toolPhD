@@ -4,17 +4,20 @@
 \alias{cor_df}
 \title{wrapper for correlation calculation}
 \usage{
-cor_df(dat, tar.column = NULL, method = "pearson")
+cor_df(dat, tar.column = NULL, method = "pearson", nice.format = FALSE)
 }
 \arguments{
 \item{dat}{a dataframe, include *only* numeric columns for correlation}
 
-\item{tar.column}{a dataframe, include *only* numeric columns for correlation}
+\item{tar.column}{default is `NULL`, when set to *one string of a column name*, then extract the output only related to this column.}
 
-\item{metohd}{default is NULL}
+\item{nice.format}{default is `FALSE`, when `TRUE`, then arrange with `r2` and subset for the significance one.}
+
+\item{metohd}{default is 'pearson', 'spearman' and 'sma' is also available}
 }
 \value{
 a list of three elements: 1. `r.mat`r matrix, 2.`p.mat` p-value matrix
+or a dataframe containing `r`,`r2`,`sign`,`p`,`p.value`,`p.sig`.
 }
 \description{
 \code{cor_df} calculate correlation matrix/stripe for each complete pairs.
@@ -23,18 +26,19 @@ a list of three elements: 1. `r.mat`r matrix, 2.`p.mat` p-value matrix
 # numeric dataframe
 cor_df(mtcars[,1:3])
 cor_df(mtcars,"cyl")
+cor_df(mtcars,"cyl",nice.format=T)
+cor_df(mtcars,"cyl",nice.format=T,method='sma')
 
 # dataframe contains character
 cor_df(iris)
 cor_df(iris[,-5])
-cor_df(iris[,-5], method='sma')
-cor_df(iris[,-5],'Sepal.Length' ,method='sma')
 
 }
 \author{
 Tien-Cheng Wang
 }
 \keyword{correlation}
+\keyword{matrix}
 \keyword{pearson}
 \keyword{sma}
 \keyword{spearman}

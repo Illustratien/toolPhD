@@ -3,12 +3,15 @@
 #' @description
 #' \code{cor_df} calculate correlation matrix/stripe for each complete pairs.
 #'
-#' @keywords correlation pearson spearman sma
+#' @keywords correlation matrix pearson spearman sma
 #'
 #' @param dat a dataframe, include *only* numeric columns for correlation
-#' @param tar.column a dataframe, include *only* numeric columns for correlation
-#' @param metohd default is NULL
+#' @param tar.column default is `NULL`, when set to *one string of a column name*, then extract the output only related to this column.
+#' @param metohd default is 'pearson', 'spearman' and 'sma' is also available
+#' @param nice.format default is `FALSE`, when `TRUE`, then arrange with `r2` and subset for the significance one.
+#'
 #' @return a list of three elements: 1. `r.mat`r matrix, 2.`p.mat` p-value matrix
+#' or a dataframe containing `r`,`r2`,`sign`,`p`,`p.value`,`p.sig`.
 #'
 #' @author Tien-Cheng Wang
 #'
@@ -22,14 +25,14 @@
 #' # numeric dataframe
 #' cor_df(mtcars[,1:3])
 #' cor_df(mtcars,"cyl")
+#' cor_df(mtcars,"cyl",nice.format=T)
+#' cor_df(mtcars,"cyl",nice.format=T,method='sma')
 #'
 #' # dataframe contains character
 #' cor_df(iris)
 #' cor_df(iris[,-5])
-#' cor_df(iris[,-5], method='sma')
-#' cor_df(iris[,-5],'Sepal.Length' ,method='sma')
 #'
-cor_df <- function(dat,tar.column=NULL,method="pearson"){
+cor_df <- function(dat,tar.column=NULL,method="pearson",nice.format=FALSE){
   # dat: data without non-numeric column
   # from, tar , r, r2,method, sig, NoP
 
@@ -85,7 +88,15 @@ cor_df <- function(dat,tar.column=NULL,method="pearson"){
       p.sig=toolPhD::sig_pvalue(p.mat[1,2:ncol(p.mat)])
     )
     rownames(res) <- NULL
+
+    if(nice.format){
+      res <- filter(mutate(dplyr::arrange(res,desc(r2)),
+                           across(c(r:r2,p),round_scale)),
+                    !p.sig=='')
+    }
   }
+
+
   message(sprintf("using %s correlation of coefficient",method))
   return(res)
 }

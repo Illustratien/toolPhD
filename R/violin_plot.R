@@ -19,7 +19,6 @@
 #' @import ggplot2
 #' @importFrom ggbeeswarm geom_quasirandom
 #' @import rlang
-#' @import dplyr desc
 #' @importFrom usethis use_pipe
 #' @importFrom Rdpack reprompt
 #' @export
@@ -32,7 +31,7 @@
 violin_plot <- function(df,xvar,yvar,orderx=F,labx=NULL,laby=NULL,...){
   library(rlang)
   if(orderx==T){
-    po <- ggplot2::ggplot(aes(reorder({{xvar}},dplyr::desc({{yvar}})),{{yvar}},group={{xvar}},fill=as.factor({{xvar}})),data=df)
+    po <- ggplot2::ggplot(aes(reorder({{xvar}},desc({{yvar}})),{{yvar}},group={{xvar}},fill=as.factor({{xvar}})),data=df)
   }else{
     po <- ggplot2::ggplot(aes({{xvar}},{{yvar}},group={{xvar}},fill=as.factor({{xvar}})),data=df)
   }

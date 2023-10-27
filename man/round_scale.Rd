@@ -10,7 +10,7 @@ round_scale(vec)
 \item{vec}{a vector, which may include different scale of numeric number.}
 }
 \value{
-a vector, which adjust format unit for each element
+a character vector, which adjust format unit for each element
 }
 \description{
 \code{round_scale} display the tidy unit of your observations
