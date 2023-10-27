@@ -4,12 +4,12 @@
 \alias{cor_df}
 \title{wrapper for correlation calculation}
 \usage{
-cor_df(dat, tar = NULL, method = "pearson")
+cor_df(dat, tar.column = NULL, method = "pearson")
 }
 \arguments{
 \item{dat}{a dataframe, include *only* numeric columns for correlation}
 
-\item{tar}{a dataframe, include *only* numeric columns for correlation}
+\item{tar.column}{a dataframe, include *only* numeric columns for correlation}
 
 \item{metohd}{default is NULL}
 }
@@ -21,7 +21,7 @@ a list of three elements: 1. `r.mat`r matrix, 2.`p.mat` p-value matrix
 }
 \examples{
 # numeric dataframe
-cor_df(mtcars)
+cor_df(mtcars[,1:3])
 cor_df(mtcars,"cyl")
 
 # dataframe contains character
