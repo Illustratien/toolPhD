@@ -94,7 +94,7 @@ cor_df <- function(dat,tar.column=NULL,method="pearson",nice.format=FALSE){
     rownames(res) <- NULL
 
     if(nice.format){
-      res <- dplyr::filter(dplyr::mutate(dplyr::arrange(res,desc(r2)),
+      res <- dplyr::filter(dplyr::mutate(dplyr::arrange(res,dplyr::desc(r2)),
                                          across(c(r:r2,p),round_scale)),
                            !p.sig=='')
     }

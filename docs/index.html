@@ -19,6 +19,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -31,18 +33,12 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">toolPhD</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.0</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-<li>
-  <a href="index.html">
-    <span class="fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
 <li>
   <a href="articles/toolPhD.html">Get started</a>
 </li>
@@ -52,7 +48,7 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/Illustratien/toolPhD/">
+  <a href="https://github.com/Illustratien/toolPhD/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -70,10 +66,9 @@
       </header><div class="row">
   <div class="contents col-md-9">
 
-<div id="toolphd-accomplish-your-academic-publication-with-ease-and-aesthetic" class="section level2">
-<h2 class="hasAnchor">
-<a href="#toolphd-accomplish-your-academic-publication-with-ease-and-aesthetic" class="anchor"></a>toolPhD: Accomplish your academic publication with ease and
-aesthetic.</h2>
+<div class="section level2">
+<h2 id="toolphd-accomplish-your-academic-publication-with-ease-and-aesthetic">toolPhD: Accomplish your academic publication with ease and aesthetic.<a class="anchor" aria-label="anchor" href="#toolphd-accomplish-your-academic-publication-with-ease-and-aesthetic"></a>
+</h2>
 <!-- Version : [0.1.0](https://illustratien.github.io/toolPhD/articles/toolPhD.html#version-history); -->
 <!-- badges: start -->
 
@@ -89,59 +84,51 @@ aesthetic.</h2>
 <!-- NA -->
 <!-- NA -->
 </div>
-<div id="introduction" class="section level2">
-<h2 class="hasAnchor">
-<a href="#introduction" class="anchor"></a>Introduction</h2>
+<div class="section level2">
+<h2 id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+</h2>
 <p><img src="https://raw.githubusercontent.com/Illustratien/toolPhD/master/docs/toolPhD.png" align="right" alt="logo" width="150" height="150" style="padding: 10px; border: none; float: right;"></p>
-<p>The package <code>toolPhD</code> is by-product of the journey of
-author’s PhD. Hopefully you find these function also useful for you.</p>
-<p>Further analysis for original publication using this package can be
-found in the link (<a href="https://github.com/Illustratien/Wang_2023_TAAG">click
-here</a>).</p>
+<p>The package <code>toolPhD</code> is by-product of the journey of author’s PhD. Hopefully you find these function also useful for you.</p>
+<p>Further analysis for original publication using this package can be found in the link (<a href="https://github.com/Illustratien/Wang_2023_TAAG" class="external-link">click here</a>).</p>
 </div>
-<div id="installation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h2>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
 <!-- The package can be installed from CRAN as follows: -->
 <!-- ```{r, eval=FALSE} -->
 <!-- install.packages('toolPhD', dependencies=TRUE) -->
 <!-- ``` -->
 <p>The development version can be installed from github as follows:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html">require</a></span><span class="op">(</span><span class="st"><a href="https://devtools.r-lib.org/">'devtools'</a></span><span class="op">)</span><span class="op">)</span> <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">'devtools'</span><span class="op">)</span>
-<span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/remote-reexports.html">install_github</a></span><span class="op">(</span><span class="st">"Illustratien/toolPhD"</span><span class="op">)</span>
-<span class="co"># or</span>
-<span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html">require</a></span><span class="op">(</span><span class="st"><a href="https://remotes.r-lib.org">'remotes'</a></span><span class="op">)</span><span class="op">)</span> <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">'remotes'</span><span class="op">)</span>
-<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span><span class="st">"Illustratien/toolPhD"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="st"><a href="https://devtools.r-lib.org/" class="external-link">'devtools'</a></span><span class="op">)</span><span class="op">)</span> <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">'devtools'</span><span class="op">)</span></span>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"Illustratien/toolPhD"</span><span class="op">)</span></span>
+<span><span class="co"># or</span></span>
+<span><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="st"><a href="https://remotes.r-lib.org" class="external-link">'remotes'</a></span><span class="op">)</span><span class="op">)</span> <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">'remotes'</span><span class="op">)</span></span>
+<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"Illustratien/toolPhD"</span><span class="op">)</span></span></code></pre></div>
 <p>To update the package:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/detach.html">detach</a></span><span class="op">(</span><span class="st">"package:toolPhD"</span>, unload <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span>
-<span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/remote-reexports.html">install_github</a></span><span class="op">(</span><span class="st">"Illustratien/toolPhD"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/detach.html" class="external-link">detach</a></span><span class="op">(</span><span class="st">"package:toolPhD"</span>, unload <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"Illustratien/toolPhD"</span><span class="op">)</span></span></code></pre></div>
 </div>
-<div id="descriptions" class="section level2">
-<h2 class="hasAnchor">
-<a href="#descriptions" class="anchor"></a>Descriptions</h2>
-<p>There are many useful functions in this package. For detailed
-tutorial with examples and references, please click the side tab
-<code>Get started</code> for general tutorial and <code>Refernce</code>
-for individual function example.</p>
+<div class="section level2">
+<h2 id="descriptions">Descriptions<a class="anchor" aria-label="anchor" href="#descriptions"></a>
+</h2>
+<p>There are many useful functions in this package. For detailed tutorial with examples and references, please click the side tab <code>Get started</code> for general tutorial and <code>Refernce</code> for individual function example.</p>
 <p>Here is an example for <code><a href="reference/violin_plot.html">violin_plot()</a></code></p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">toolPhD</span><span class="op">)</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org">ggplot2</a></span><span class="op">)</span>
-<span class="fu"><a href="reference/violin_plot.html">violin_plot</a></span><span class="op">(</span><span class="va">mtcars</span>,<span class="va">cyl</span>,<span class="va">mpg</span>,labx<span class="op">=</span><span class="st">"Number of cylinders"</span>,laby<span class="op">=</span><span class="st">"Miles/gallon"</span><span class="op">)</span></code></pre></div>
-<p><img src="inst/extdata/unnamed-chunk-5-1.png"><!-- --><!-- ## What's new --><!-- To know whats new in this version type: --></p>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">toolPhD</span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span>
+<span><span class="fu"><a href="reference/violin_plot.html">violin_plot</a></span><span class="op">(</span><span class="va">mtcars</span>,<span class="va">cyl</span>,<span class="va">mpg</span>,labx<span class="op">=</span><span class="st">"Number of cylinders"</span>,laby<span class="op">=</span><span class="st">"Miles/gallon"</span><span class="op">)</span></span></code></pre></div>
+<p><img src="README_files/figure-gfm/unnamed-chunk-5-1.png"><!-- --><!-- ## What's new --><!-- To know whats new in this version type: --></p>
 <!-- ```{r, eval=FALSE} -->
 <!-- news(package='toolPhD') -->
 <!-- ``` -->
 </div>
-<div id="citing-toolphd" class="section level2">
-<h2 class="hasAnchor">
-<a href="#citing-toolphd" class="anchor"></a>Citing <code>toolPhD</code>
+<div class="section level2">
+<h2 id="citing-toolphd">Citing <code>toolPhD</code>
+<a class="anchor" aria-label="anchor" href="#citing-toolphd"></a>
 </h2>
-<p>To cite the methods in the package please use: Wang T (2023).
-toolPhD: Accomplish your academic publication with ease and aesthetic. R
-package version 0.1.0.</p>
+<p>To cite the methods in the package please use: Wang T (2023). toolPhD: Accomplish your academic publication with ease and aesthetic. R package version 0.1.0.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="sc">@</span>Manual{,</span>
 <span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>  title <span class="ot">=</span> {toolPhD<span class="sc">:</span> Pave your academic path with profession and aesthetic.},</span>
 <span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a>  author <span class="ot">=</span> {Tien<span class="sc">-</span>Cheng Wang},</span>
@@ -169,48 +156,59 @@ package version 0.1.0.</p>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
-<h2>Links</h2>
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Browse source code at <br><a href="https://github.com/Illustratien/toolPhD/">https://​github.com/​Illustratien/​toolPhD/​</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/Illustratien/toolPhD/issues">https://​github.com/​Illustratien/​toolPhD/​issues</a>
-</li>
+<li><a href="https://github.com/Illustratien/toolPhD/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/Illustratien/toolPhD/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
+
 <div class="license">
-<h2>License</h2>
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li>GPL (&gt;= 3)</li>
 </ul>
 </div>
+
+
+<div class="citation">
+<h2 data-toc-skip>Citation</h2>
+<ul class="list-unstyled">
+<li><a href="authors.html#citation">Citing toolPhD</a></li>
+</ul>
+</div>
+
 <div class="developers">
-<h2>Developers</h2>
+<h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
 <li>Tien-Cheng Wang <br><small class="roles"> Author, maintainer </small>  </li>
 </ul>
 </div>
 
-  <div class="dev-status">
-<h2>Dev status</h2>
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
-<li><a href="https://www.r-project.org/Licenses/"><img src="https://img.shields.io/badge/License-GPL3-orange" alt="License: GPL-3"></a></li>
-<li><a href="https://illustratien.github.io/toolPhD/articles/toolPhD.html"><img src="https://img.shields.io/badge/website-tutorial-green" alt="Website - pkgdown"></a></li>
-<li><a href="https://github.com/Illustratien/toolPhD"><img src="https://img.shields.io/github/languages/code-size/Illustratien/toolPhD.svg" alt="Github Code Size"></a></li>
-<li><a href="https://github.com/Illustratien/toolPhD/commits/master"><img src="https://img.shields.io/badge/last%20change-2023--09--27-yellowgreen.svg" alt="Last-changedate"></a></li>
-<li><a href="https://cran.r-project.org/"><img src="https://img.shields.io/badge/R%3E%3D-3.5.0-6666ff.svg?logo=R" alt="minimal R version"></a></li>
-<li><a href="https://CRAN.R-project.org/package=toolPhD"><img src="https://cranlogs.r-pkg.org/badges/grand-total/toolPhD?color=green" alt="rstudio mirror downloads"></a></li>
+<li><a href="https://www.r-project.org/Licenses/" class="external-link"><img src="https://img.shields.io/badge/License-GPL3-orange" alt="License: GPL-3"></a></li>
+<li><a href="https://illustratien.github.io/toolPhD/articles/toolPhD.html" class="external-link"><img src="https://img.shields.io/badge/website-tutorial-green" alt="Website - pkgdown"></a></li>
+<li><a href="https://github.com/Illustratien/toolPhD" class="external-link"><img src="https://img.shields.io/github/languages/code-size/Illustratien/toolPhD.svg" alt="Github Code Size"></a></li>
+<li><a href="https://github.com/Illustratien/toolPhD/commits/master" class="external-link"><img src="https://img.shields.io/badge/last%20change-2023--10--27-yellowgreen.svg" alt="Last-changedate"></a></li>
+<li><a href="https://cran.r-project.org/" class="external-link"><img src="https://img.shields.io/badge/R%3E%3D-3.5.0-6666ff.svg?logo=R" alt="minimal R version"></a></li>
+<li><a href="https://CRAN.R-project.org/package=toolPhD" class="external-link"><img src="https://cranlogs.r-pkg.org/badges/grand-total/toolPhD?color=green" alt="rstudio mirror downloads"></a></li>
 </ul>
 </div>
-</div>
+
+  </div>
 </div>
 
 
       <footer><div class="copyright">
-  <p>Developed by Tien-Cheng Wang.</p>
+  <p></p>
+<p>Developed by Tien-Cheng Wang.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer>
@@ -218,6 +216,8 @@ package version 0.1.0.</p>
 
   
 
+
+  
 
   </body>
 </html>

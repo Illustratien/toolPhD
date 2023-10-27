@@ -25,7 +25,6 @@
 #'
 #' @examples
 #' sma_plot(mtcars,xvar=mpg,yvar = cyl)
-# sma_plot(mtcars,xvar=mpg,yvar = cyl,colorvar=cyl)
 # function ----------------------------------------------------------------
 sma_plot <- function(datf,xvar,yvar){
 

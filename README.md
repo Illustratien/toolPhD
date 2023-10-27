@@ -13,7 +13,7 @@ GPL-3](https://img.shields.io/badge/License-GPL3-orange)](https://www.r-project.
 pkgdown](https://img.shields.io/badge/website-tutorial-green)](https://illustratien.github.io/toolPhD/articles/toolPhD.html)
 [![Github Code
 Size](https://img.shields.io/github/languages/code-size/Illustratien/toolPhD.svg)](https://github.com/Illustratien/toolPhD)
-[![Last-changedate](https://img.shields.io/badge/last%20change-2023--09--27-yellowgreen.svg)](https://github.com/Illustratien/toolPhD/commits/master)
+[![Last-changedate](https://img.shields.io/badge/last%20change-2023--10--27-yellowgreen.svg)](https://github.com/Illustratien/toolPhD/commits/master)
 [![minimal R
 version](https://img.shields.io/badge/R%3E%3D-3.5.0-6666ff.svg?logo=R)](https://cran.r-project.org/)
 [![rstudio mirror
@@ -82,8 +82,8 @@ library(ggplot2)
 violin_plot(mtcars,cyl,mpg,labx="Number of cylinders",laby="Miles/gallon")
 ```
 
-![](inst/extdata/unnamed-chunk-5-1.png)<!-- --> <!-- ## What's new -->
-<!-- To know whats new in this version type: -->
+![](README_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
+<!-- ## What's new --> <!-- To know whats new in this version type: -->
 
 <!-- ```{r, eval=FALSE} -->
 <!-- news(package='toolPhD') -->
