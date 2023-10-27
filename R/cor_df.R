@@ -18,6 +18,7 @@
 #' @importFrom smatr sma
 #' @importFrom usethis use_pipe
 #' @importFrom Rdpack reprompt
+#' @importFrom dplyr filter mutate across arrange
 #'
 #' @export
 #'
@@ -65,14 +66,17 @@ cor_df <- function(dat,tar.column=NULL,method="pearson",nice.format=FALSE){
     stop(sprintf("only one target at a time, instead of %i",length(tar.column)))
   }
 
-  if (!method=="sma"){
+  if (method%in%c("pearson","spearman")){
     # method <- ifelse(is.null(method),"pearson",method)
     cor_ <- cor(dat, use="complete.obs",method = method)
     p.mat <- cor.mtest(dat)
-  } else {
+  } else if (method=="sma") {
+    #sma
     tmp <- toolPhD::sma_cor(dat)
     cor_ <- tmp[[1]]
     p.mat <- tmp[[2]]
+  } else{
+    stop(sprintf("unknown method %s",method))
   }
   res <- list(r.value=cor_,p.value=p.mat)
 
@@ -90,9 +94,9 @@ cor_df <- function(dat,tar.column=NULL,method="pearson",nice.format=FALSE){
     rownames(res) <- NULL
 
     if(nice.format){
-      res <- filter(mutate(dplyr::arrange(res,desc(r2)),
-                           across(c(r:r2,p),round_scale)),
-                    !p.sig=='')
+      res <- dplyr::filter(dplyr::mutate(dplyr::arrange(res,desc(r2)),
+                                         across(c(r:r2,p),round_scale)),
+                           !p.sig=='')
     }
   }
 
