@@ -16,8 +16,8 @@ a character vector, which turn pvalue into significance for each element
 \code{sig_pvalue} display the tidy unit of your observations
 }
 \examples{
-vec <- c(100.1,10.1,1.1,0.1,0.01,0.001,0.0001,0.00001)
-signif(vec)
+vec <- c(1.1,0.1,0.01,0.001,0.0001,0.00001)
+sig_pvalue(vec)
 }
 \author{
 Tien-Cheng Wang
