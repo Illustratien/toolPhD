@@ -68,7 +68,9 @@ cor_df <- function(dat,tar.column=NULL,method="pearson",nice.format=FALSE){
 
   if (method%in%c("pearson","spearman")){
     # method <- ifelse(is.null(method),"pearson",method)
-    cor_ <- cor(dat, use="complete.obs",method = method)
+    cor_ <- cor(dat,
+                use = ifelse(method=="pearson","pairwise.complete.obs","complete.obs"),
+                method = method)
     p.mat <- cor.mtest(dat)
   } else if (method=="sma") {
     #sma
