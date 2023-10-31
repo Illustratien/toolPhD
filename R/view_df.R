@@ -25,7 +25,11 @@ view_df <- function(x){
   purrr::map_dfr(1:ncol(x),~{
     ue <- unique(x[,.x])
     if(length(ue)<10){
+      if(is.numeric(ue)){
+        ue <- round_scale(ue)
+      }
       content <- paste(sort(ue),collapse=",")
+
     }else{
       if(all(is.na(ue))){
         content <- "NA"
