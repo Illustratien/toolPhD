@@ -24,7 +24,7 @@ view_df <- function(x){
   x <- as.data.frame(x)
   purrr::map_dfr(1:ncol(x),~{
     ue <- unique(x[,.x])
-    if(length(ue)<10){
+    if(length(ue)<5){
       if(is.numeric(ue)){
         ue <- round_scale(ue)
       }
