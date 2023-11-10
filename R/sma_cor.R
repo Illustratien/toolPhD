@@ -40,11 +40,12 @@ sma_cor<- function (mat){
   for (i in 1:(n - 1)) {
     for (j in (i + 1):n) {
       tmp <- smatr::sma(paste0(names(mat)[j], "~",
-                               names(mat)[i]), method = "SMA", data = mat[complete.cases(amat[,
-                                                                                              i], amat[, j]), ])$groupsummary
+                               names(mat)[i]),
+                        method = "SMA", data = mat[
+                          complete.cases(amat[,i], amat[, j]), ])$groupsummary
       p.mat[i, j] <- p.mat[j, i] <- tmp$pval
-      r.mat[i, j] <- r.mat[j, i] <- sqrt(tmp$r2) * ifelse(tmp$Slope >
-                                                            0, 1, -1)
+      r.mat[i, j] <- r.mat[j, i] <- sqrt(tmp$r2) *
+        ifelse(tmp$Slope > 0, 1, -1)
       s.mat[i, j] <- s.mat[j, i] <- tmp$Slope
     }
   }
