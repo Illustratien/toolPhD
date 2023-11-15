@@ -13,6 +13,7 @@ Imports:
     dplyr,
     data.table,
     smatr,
+    ggbeeswarm,
     ggplot2,
     purrr,
     stats

@@ -20,7 +20,6 @@
 #' @importFrom ggbeeswarm geom_quasirandom
 #' @import rlang
 #' @importFrom usethis use_pipe
-#' @importFrom Rdpack reprompt
 #' @export
 #'
 #' @examples
