@@ -19,12 +19,7 @@
 #'
 #' @author Tien-Cheng Wang
 #'
-#' @importFrom smatr sma
 #' @import ggplot2
-#' @importFrom ggpp geom_text_npc
-#' @importFrom purrr map_dfr
-#' @importFrom usethis use_pipe
-#' @importFrom Rdpack reprompt
 #'
 #' @export
 #'
@@ -62,6 +57,7 @@ theme_phd_talk<- function(ax.txt.siz=NULL,ax.tit.siz=NULL,lgd.txt.siz=NULL,lgd.t
       # facet
       strip.text.x   = element_text(size=strp.txt.siz,face="bold"),
       strip.text.y   = element_text(size=strp.txt.siz,face="bold"),
+      strip.background = element_blank(),
       # strip.background = element_rect(colour = "White", fill=NA),
       # frame
       panel.border = element_rect(colour = "black", fill=NA, size=frame),

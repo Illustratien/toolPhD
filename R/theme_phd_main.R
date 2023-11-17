@@ -20,8 +20,6 @@
 #' @author Tien-Cheng Wang
 #'
 #' @import ggplot2
-#' @importFrom usethis use_pipe
-#' @importFrom Rdpack reprompt
 #'
 #' @export
 #'
