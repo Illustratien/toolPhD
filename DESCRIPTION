@@ -16,10 +16,18 @@ Imports:
     ggbeeswarm,
     ggplot2,
     purrr,
+    tidyr,
+    Rdpack,
+    foreach,
+    doParallel,
+    usethis,
+    glue,
+    ggpp,
     stats
 Suggests: 
     testthat (>= 3.0.0),
     knitr,
+    cowplot,
     rmarkdown,
     pkgdown,
     pander
