@@ -31,14 +31,14 @@
 #' cowplot::plot_grid(p,p+theme_phd_facet(frame=T))
 theme_phd_facet <- function(ax.txt.siz=NULL,ax.tit.siz=NULL,lgd.txt.siz=NULL,lgd.tit.siz=NULL,strp.txt.siz=NULL,
                      t=NULL,r=NULL,b=NULL,l=NULL, frame=FALSE,...){
-  if (is.null(ax.txt.siz)){ax.txt.siz <-12}
-  if (is.null(ax.tit.siz)){ax.tit.siz <- 14}
-  if (is.null(lgd.txt.siz)){lgd.txt.siz <- 10}
-  if (is.null(lgd.tit.siz)){lgd.tit.siz <- 10}
-  if (is.null(strp.txt.siz)){strp.txt.siz <- 14}
-  if(is.null(t)){t<-5}
-  if(is.null(r)){r<-5}
-  if(is.null(b)){b<-10}
+  if (is.null(ax.txt.siz)){ax.txt.siz <-9}
+  if (is.null(ax.tit.siz)){ax.tit.siz <- 9.2}
+  if (is.null(lgd.txt.siz)){lgd.txt.siz <- 8}
+  if (is.null(lgd.tit.siz)){lgd.tit.siz <- 8}
+  if (is.null(strp.txt.siz)){strp.txt.siz <- 12}
+  if(is.null(t)){t<-15}
+  if(is.null(r)){r<-1}
+  if(is.null(b)){b<-2}
   if(is.null(l)){l<-1}
 
   ggplot2::theme_test()+
@@ -50,9 +50,9 @@ theme_phd_facet <- function(ax.txt.siz=NULL,ax.tit.siz=NULL,lgd.txt.siz=NULL,lgd
       # axis title
       axis.title   =element_text(size=ax.tit.siz,face="bold"),# axis title size
       axis.title.y = element_text(margin = margin(r=15),vjust=-1),# spacing of y and tick
-      axis.title.x = element_text(margin = margin(b=15),vjust=-4), # spacing of x and axis
+      axis.title.x = element_text(margin = margin(b=3),vjust=-4), # spacing of x and axis
       # axis tick
-      axis.ticks   =element_line(size = 1,color="black"),# tick thickness
+      axis.ticks   =element_line(size = .6,color="black"),# tick thickness
       axis.ticks.length=unit(.2, "cm"),# tick length
       # facet
       strip.text.x   = element_text(size=strp.txt.siz,face='bold'),
@@ -60,8 +60,8 @@ theme_phd_facet <- function(ax.txt.siz=NULL,ax.tit.siz=NULL,lgd.txt.siz=NULL,lgd
       strip.background = element_rect(colour = NA, fill=NA),
       # frame
       panel.border = element_rect(colour = ifelse(is.null(frame),NA,"black"),
-                                  fill=NA, size=1.5),
-      axis.line = element_line(colour = "black",size=1),
+                                  fill=NA, size=.6),
+      axis.line = element_line(colour = "black",size=.6),
       # axis.line    = element_line(size = 1, linetype = "solid"),# axis line
       # axis.line.x.top = element_line(size = 1, linetype = "solid"),# axis line
       # axis.line.y.right = element_line(size = 1, linetype = "solid"),# axis line
