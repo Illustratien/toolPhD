@@ -14,7 +14,6 @@ scripts for initialization
 }
 \examples{
 parallel_readme()
-
 }
 \author{
 Tien-Cheng Wang

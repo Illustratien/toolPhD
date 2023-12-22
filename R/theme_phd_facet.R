@@ -57,7 +57,7 @@ theme_phd_facet <- function(ax.txt.siz=NULL,ax.tit.siz=NULL,lgd.txt.siz=NULL,lgd
       # facet
       strip.text.x   = element_text(size=strp.txt.siz,face='bold'),
       strip.text.y   = element_text(size=strp.txt.siz,face='bold'),
-      strip.background = element_rect(colour = NA, fill=NA),
+      strip.background = element_blank(),
       # frame
       panel.border = element_rect(colour = ifelse(is.null(frame),NA,"black"),
                                   fill=NA, size=.6),

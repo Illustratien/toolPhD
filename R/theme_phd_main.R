@@ -58,7 +58,7 @@ theme_phd_main<- function(ax.txt.siz=NULL,ax.tit.siz=NULL,lgd.txt.siz=NULL,lgd.t
       # facet
       strip.text.x   = element_text(size=strp.txt.siz,face="bold"),
       strip.text.y   = element_text(size=strp.txt.siz,face="bold"),
-      strip.background = element_rect(colour = "White", fill=NA),
+      strip.background = element_blank(),
       # frame
       panel.border = element_rect(colour = "black", fill=NA, size=frame),
       # axis.line    = element_line(size = 2, linetype = "solid"),# axis line

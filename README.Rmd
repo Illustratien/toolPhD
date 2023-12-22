@@ -89,6 +89,14 @@ library(toolPhD)
 library(ggplot2)
 violin_plot(mtcars,cyl,mpg,labx="Number of cylinders",laby="Miles/gallon")
 ```
+Useful 1:1 line plot `plot_121()`
+```{r}
+library(toolPhD)
+library(ggplot2)
+plot_121(iris,Sepal.Length,Petal.Length,color=Species)
+plot_121(iris,Sepal.Length,Petal.Length)
+```
+
 <!-- ## What's new -->
 <!-- To know whats new in this version type: -->
 
