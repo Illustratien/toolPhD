@@ -28,16 +28,19 @@ view_group<- function(dat,g_vec,t_vec=NULL){
   }
 
   res <- Reduce(function(x,y) dplyr::left_join(x,y,by="colnam"),
-         purrr::map(
-           dplyr::group_split(
-             dplyr::group_by(dplyr::select(dat,all_of(c(g_vec,t_vec))),
-                             across(all_of(g_vec)))),
-           ~{
-             toolPhD::view_df(.x)
-           })
+                purrr::map(
+                  dplyr::group_split(
+                    dplyr::group_by(dplyr::select(dat,all_of(c(g_vec,t_vec))),
+                                    across(all_of(g_vec)))),
+                  ~{
+                    toolPhD::view_df(.x)
+                  })
 
   )
-  names(res) <- NULL
+  res <- data.frame(t(res))
+  names(res) <- res[1,]
+  res <- res[-1,]
+  row.names(res) <- NULL
   return(res)
 }
 
