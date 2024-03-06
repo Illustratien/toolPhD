@@ -23,12 +23,12 @@ view_df <- function(x){
   # have the range/elements of each column
   x <- as.data.frame(x)
   purrr::map_dfr(1:ncol(x),~{
-    ue <- unique(na.omit(x[,.x]))
+    ue <- unique(x[,.x])
     if(length(ue)<5){
       if(is.numeric(ue)){
-        ue <- round_scale(ue)
+        ue <- round_scale(sort(ue))
       }
-      content <- paste(sort(ue),collapse=",")
+      content <- paste(ue,collapse=",")
 
     }else{
       if(all(is.na(ue))){
