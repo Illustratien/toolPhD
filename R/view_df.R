@@ -23,7 +23,7 @@ view_df <- function(x){
   # have the range/elements of each column
   x <- as.data.frame(x)
   purrr::map_dfr(1:ncol(x),~{
-    ue <- unique(x[,.x])
+    ue <- unique(na.omit(x[,.x]))
     if(length(ue)<5){
       if(is.numeric(ue)){
         ue <- round_scale(ue)
@@ -35,8 +35,8 @@ view_df <- function(x){
         content <- "NA"
       }else if(is.numeric(na.omit(ue))|all(grepl("^[0-9]+$", na.omit(ue)))){
         ue <- round_scale(ue)
-        if (any(is.na(ue))){
-          content <- paste0(paste(range(as.numeric(na.omit(ue))),collapse="~")," include NA")
+        if (any(grepl("NA",ue))){
+          content <- paste0(paste(range(na.omit(as.numeric(ue))),collapse="~")," include NA")
         }else{
           content <- paste(range(as.numeric(ue)),collapse="~")
         }
