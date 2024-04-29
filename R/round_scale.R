@@ -25,7 +25,7 @@ round_scale <-function(vec){
   # useful in table dsiplay
   # return the appropriate formatted digit vector
   purrr::map_chr(vec,~{
-    if(.x==0){
+    if(.x==0&(!is.na(.x))){
       "0"
     }else if(is.na(.x)|abs(.x)<0.0001){
       formatC(.x,digits=1,format='e')
