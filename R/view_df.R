@@ -28,7 +28,7 @@ view_df <- function(x){
       if(is.numeric(ue)){
         ue <- round_scale(sort(ue))
       }
-      content <- paste(ue,collapse=",")
+      content <- paste(sort(ue),collapse=",")
 
     }else{
       if(all(is.na(ue))){
