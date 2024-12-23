@@ -20,32 +20,30 @@
 #' @examples
 #' view_df(mtcars)
 view_df <- function(x){
-  # have the range/elements of each column
   x <- as.data.frame(x)
-  purrr::map_dfr(1:ncol(x),~{
-    ue <- unique(x[,.x])
-    if(length(ue)<5){
-      if(is.numeric(ue)){
-        ue <- round_scale(sort(ue))
-      }
-      content <- paste(sort(ue),collapse=",")
-
-    }else{
-      if(all(is.na(ue))){
-        content <- "NA"
-      }else if(is.numeric(na.omit(ue))|all(grepl("^[0-9]+$", na.omit(ue)))){
+  purrr::map_dfr(1:ncol(x), ~{
+    ue <- unique(x[, .x])
+    if (length(ue) < 5) {
+      if (is.numeric(ue)) {
         ue <- round_scale(ue)
-        if (any(grepl("NA",ue))){
-          content <- paste0(paste(range(na.omit(suppressWarnings(as.numeric(ue)))),collapse="~")," include NA")
-        }else{
-          content <- paste(range(as.numeric(ue)),collapse="~")
+      }
+      content <- paste(sort(ue), collapse = ",")
+    }else {
+      if (all(is.na(ue))) {
+        content <- "NA"
+      } else if (is.numeric(na.omit(ue)) | all(grepl("^[0-9]+$",
+                                                     na.omit(ue)))) {
+        ue <- round_scale(as.numeric(ue))
+        if (any(is.na(ue))) {
+          content <- paste0(paste(range(as.numeric(na.omit(ue))),
+                                  collapse = "~"), " include NA")
+        } else {
+          content <- paste(range(as.numeric(ue)), collapse = "~")
         }
-
-      }else{
-        content <- paste0("Levels number:",length(ue))      }
+      }else {
+        content <- paste0("Levels number:", length(ue))
+      }
     }
-    data.frame(colnam=names(x)[.x],
-               info=content)
+    data.frame(colnam = names(x)[.x], info = content)
   })
 }
-
