@@ -34,6 +34,7 @@ view_df <- function(x){
       } else if (is.numeric(na.omit(ue)) | all(grepl("^[0-9]+$",
                                                      na.omit(ue)))) {
         ue <- round_scale(as.numeric(ue))
+
         if (any(is.na(ue))) {
           content <- paste0(paste(range(as.numeric(na.omit(ue))),
                                   collapse = "~"), " include NA")
