@@ -14,7 +14,7 @@ facet_nested_x(ggobj, cols, ...)
 \item{...}{other argument to pass to facet_grid(...)}
 }
 \value{
-a character vector, which turn pvalue into significance for each element
+a character vector, which turn p-value into significance for each element
 }
 \description{
 \code{facet_nested_x} extension of facet_grid using package `ggh4x` and make grouping x

@@ -1,26 +1,72 @@
-<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
-<url><loc>/404.html</loc></url>
-<url><loc>/articles/index.html</loc></url>
-<url><loc>/articles/toolPhD.html</loc></url>
-<url><loc>/authors.html</loc></url>
-<url><loc>/index.html</loc></url>
-<url><loc>/reference/common_group.html</loc></url>
-<url><loc>/reference/cor_df.html</loc></url>
-<url><loc>/reference/df_ue.html</loc></url>
-<url><loc>/reference/facet_nested_x.html</loc></url>
-<url><loc>/reference/index.html</loc></url>
-<url><loc>/reference/parallel_readme.html</loc></url>
-<url><loc>/reference/plot_121.html</loc></url>
-<url><loc>/reference/round_scale.html</loc></url>
-<url><loc>/reference/sig_pvalue.html</loc></url>
-<url><loc>/reference/sma_cor.html</loc></url>
-<url><loc>/reference/sma_plot.html</loc></url>
-<url><loc>/reference/theme_phd_facet.html</loc></url>
-<url><loc>/reference/theme_phd_main.html</loc></url>
-<url><loc>/reference/theme_phd_talk.html</loc></url>
-<url><loc>/reference/view_df.html</loc></url>
-<url><loc>/reference/view_group.html</loc></url>
-<url><loc>/reference/view_parse.html</loc></url>
-<url><loc>/reference/violin_plot.html</loc></url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>/404.html</loc>
+  </url>
+  <url>
+    <loc>/articles/index.html</loc>
+  </url>
+  <url>
+    <loc>/articles/toolPhD.html</loc>
+  </url>
+  <url>
+    <loc>/authors.html</loc>
+  </url>
+  <url>
+    <loc>/index.html</loc>
+  </url>
+  <url>
+    <loc>/reference/common_group.html</loc>
+  </url>
+  <url>
+    <loc>/reference/cor_df.html</loc>
+  </url>
+  <url>
+    <loc>/reference/df_ue.html</loc>
+  </url>
+  <url>
+    <loc>/reference/facet_nested_x.html</loc>
+  </url>
+  <url>
+    <loc>/reference/index.html</loc>
+  </url>
+  <url>
+    <loc>/reference/parallel_readme.html</loc>
+  </url>
+  <url>
+    <loc>/reference/plot_121.html</loc>
+  </url>
+  <url>
+    <loc>/reference/round_scale.html</loc>
+  </url>
+  <url>
+    <loc>/reference/sig_pvalue.html</loc>
+  </url>
+  <url>
+    <loc>/reference/sma_cor.html</loc>
+  </url>
+  <url>
+    <loc>/reference/sma_plot.html</loc>
+  </url>
+  <url>
+    <loc>/reference/theme_phd_facet.html</loc>
+  </url>
+  <url>
+    <loc>/reference/theme_phd_main.html</loc>
+  </url>
+  <url>
+    <loc>/reference/theme_phd_talk.html</loc>
+  </url>
+  <url>
+    <loc>/reference/view_df.html</loc>
+  </url>
+  <url>
+    <loc>/reference/view_group.html</loc>
+  </url>
+  <url>
+    <loc>/reference/view_parse.html</loc>
+  </url>
+  <url>
+    <loc>/reference/violin_plot.html</loc>
+  </url>
 </urlset>
-

@@ -9,12 +9,12 @@
 #' @param cols string, containing columns names to be separated, separated by "+" when more than one.
 #' @param ... other argument to pass to facet_grid(...)
 
-#' @return a character vector, which turn pvalue into significance for each element
+#' @return a character vector, which turn p-value into significance for each element
 #'
 #' @author Tien-Cheng Wang
 #'
 #' @import ggplot2
-#' @import ggh4x
+#' @importFrom ggh4x facet_nested
 #' @importFrom glue glue
 #'
 #' @export

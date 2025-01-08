@@ -11,6 +11,8 @@ Depends: R (>= 3.5.0)
 VignetteBuilder: knitr
 Imports: 
     dplyr,
+    pacman,
+    ggh4x,
     data.table,
     smatr,
     ggbeeswarm,
