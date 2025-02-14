@@ -13,6 +13,7 @@ Imports:
     dplyr,
     pacman,
     ggh4x,
+    ggpmisc,
     data.table,
     smatr,
     ggbeeswarm,
